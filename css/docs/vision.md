@@ -1,1 +1,0 @@
-# RipVanWhisker Vision
