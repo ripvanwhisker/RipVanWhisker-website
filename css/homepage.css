@@ -1,1 +1,167 @@
+/* ==========================================================
+   HOMEPAGE
+   RipVanWhisker Cat Café
+   Version 2.0
+========================================================== */
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.rvw-home-hero{
+    padding:80px 0 120px;
+}
+
+.rvw-home-hero .rvw-container{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:72px;
+    align-items:center;
+}
+
+.rvw-home-eyebrow{
+    display:inline-block;
+    margin-bottom:18px;
+    color:var(--rvw-gold);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.rvw-home-title{
+    margin-bottom:24px;
+}
+
+.rvw-home-subtitle{
+    font-size:1.35rem;
+    color:var(--rvw-espresso);
+    margin-bottom:18px;
+}
+
+.rvw-home-copy{
+    max-width:640px;
+}
+
+.rvw-home-actions{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-top:36px;
+}
+
+.rvw-home-image img{
+    border-radius:var(--rvw-radius-lg);
+    box-shadow:var(--rvw-shadow-lg);
+}
+
+/* ==========================================================
+   YOUR VISIT
+========================================================== */
+
+.rvw-visit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+}
+
+.rvw-visit-card{
+    text-align:center;
+}
+
+.rvw-visit-card h3{
+    margin-top:18px;
+}
+
+/* ==========================================================
+   EVERY CAT HAS A STORY
+========================================================== */
+
+.rvw-story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:64px;
+    align-items:center;
+}
+
+.rvw-story img{
+    border-radius:var(--rvw-radius-lg);
+    box-shadow:var(--rvw-shadow-md);
+}
+
+/* ==========================================================
+   FOUNDING HUMANS
+========================================================== */
+
+.rvw-founders{
+    text-align:center;
+}
+
+.rvw-founders .rvw-card{
+    max-width:900px;
+    margin:auto;
+}
+
+.rvw-founders-actions{
+    margin-top:32px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/* ==========================================================
+   JOURNEY
+========================================================== */
+
+.rvw-timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.rvw-timeline .rvw-card{
+    margin-bottom:24px;
+}
+
+/* ==========================================================
+   FOOTER CTA
+========================================================== */
+
+.rvw-footer-cta{
+    background:var(--rvw-ocean);
+    color:#fff;
+    text-align:center;
+    padding:90px 0;
+}
+
+.rvw-footer-cta h2,
+.rvw-footer-cta p{
+    color:#fff;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:900px){
+
+    .rvw-home-hero .rvw-container,
+    .rvw-story,
+    .rvw-visit-grid{
+        grid-template-columns:1fr;
+    }
+
+    .rvw-home-image{
+        order:-1;
+    }
+
+    .rvw-home-actions,
+    .rvw-founders-actions{
+        flex-direction:column;
+    }
+
+    .rvw-home-actions .rvw-btn,
+    .rvw-founders-actions .rvw-btn{
+        width:100%;
+    }
+}
 
