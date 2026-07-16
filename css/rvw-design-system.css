@@ -1,1 +1,213 @@
+/* ==========================================================
+   RIPVANWHISKER DESIGN SYSTEM
+   Version 2.0
+   ----------------------------------------------------------
+   01. Variables
+   02. Reset
+   03. Typography
+   04. Layout
+   05. Buttons
+   06. Cards
+   07. Images
+   08. Forms
+   09. Utilities
+   10. Animations
+   11. Mobile
+========================================================== */
+:root{
 
+    --rvw-cream:#FAF7F1;
+    --rvw-white:#FFFFFF;
+    --rvw-gold:#C89A2B;
+    --rvw-ocean:#295D73;
+    --rvw-espresso:#3A2D28;
+    --rvw-charcoal:#262626;
+    --rvw-gray:#666;
+
+    --rvw-radius:18px;
+    --rvw-radius-large:28px;
+
+    --rvw-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    --rvw-transition:.35s ease;
+
+    --rvw-max-width:1320px;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--rvw-white);
+
+    color:var(--rvw-charcoal);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+h1,h2,h3,h4{
+
+    font-family:'Playfair Display',serif;
+
+    font-weight:700;
+
+    line-height:1.08;
+
+}
+
+h1{
+
+    font-size:clamp(3.8rem,7vw,6rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+}
+
+h3{
+
+    font-size:2rem;
+
+}
+
+p{
+
+    font-size:1.1rem;
+
+    margin-bottom:24px;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+.rvw-container{
+
+    width:min(1320px,92%);
+
+    margin:auto;
+
+}
+
+.rvw-section{
+
+    padding:120px 0;
+
+}
+
+.rvw-section-light{
+
+    background:var(--rvw-cream);
+
+}
+
+.rvw-section-white{
+
+    background:white;
+
+}
+.rvw-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    transition:var(--rvw-transition);
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.rvw-btn-primary{
+
+    background:var(--rvw-gold);
+
+    color:white;
+
+}
+
+.rvw-btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.rvw-btn-secondary{
+
+    border:2px solid var(--rvw-gold);
+
+}
+.rvw-card{
+
+    background:white;
+
+    border-radius:var(--rvw-radius-large);
+
+    padding:42px;
+
+    box-shadow:var(--rvw-shadow);
+
+}
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+.text-center{
+
+    text-align:center;
+
+}
+
+.mb-1{
+
+    margin-bottom:16px;
+
+}
+
+.mb-2{
+
+    margin-bottom:32px;
+
+}
+@media (max-width:900px){
+
+    .rvw-section{
+
+        padding:80px 0;
+
+    }
+
+}
