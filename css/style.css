@@ -21,6 +21,30 @@
 
 }
 /* ==========================================================
+   FOUNDATION
+========================================================== */
+
+.display{
+    font-family:"Cormorant Garamond", serif;
+}
+
+.section{
+    padding:140px 8%;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:var(--radius-pill);
+    transition:var(--transition);
+}
+/* ==========================================================
    GLOBAL STYLES
 ========================================================== */
 
