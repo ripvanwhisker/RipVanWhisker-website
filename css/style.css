@@ -2429,3 +2429,459 @@ font-size:1.7rem;
     }
 
 }
+/* ==========================================================
+   ABOUT PAGE
+========================================================== */
+
+/* HERO */
+
+.about-hero{
+
+    position:relative;
+
+    min-height:75vh;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(28,22,18,.84) 0%,
+            rgba(28,22,18,.65) 35%,
+            rgba(28,22,18,.18) 70%,
+            rgba(28,22,18,0) 100%
+        ),
+        url("https://www.ripvanwhisker.com/wp-content/uploads/2026/07/RVWHero.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:var(--rvw-white);
+}
+
+.about-container{
+
+    width:min(1400px,92%);
+    margin:auto;
+    position:relative;
+    z-index:2;
+
+}
+
+.about-content{
+
+    max-width:700px;
+    padding:120px 0;
+
+}
+
+.about-eyebrow{
+
+    display:inline-block;
+
+    color:var(--rvw-gold);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-bottom:24px;
+
+}
+
+.about-hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:5rem;
+
+    line-height:1;
+
+    margin-bottom:34px;
+
+    color:var(--rvw-white);
+
+}
+
+.about-intro{
+
+    font-size:1.25rem;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+
+/* STORY */
+
+.about-story{
+
+    background:#FDFBF8;
+
+    padding:140px 8%;
+
+}
+
+.story-wrapper{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:28px;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.14);
+
+}
+
+.story-copy{
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:28px;
+
+    box-shadow:0 18px 55px rgba(0,0,0,.06);
+
+}
+
+.section-label{
+
+    display:inline-block;
+
+    color:var(--rvw-gold);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.story-copy h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3.3rem;
+
+    line-height:1.05;
+
+    color:#352820;
+
+    margin-bottom:30px;
+
+}
+
+.story-copy p{
+
+    color:#655B55;
+
+    line-height:1.95;
+
+    margin-bottom:22px;
+
+}
+
+
+/* MISSION */
+
+.about-mission{
+
+    background:#F8F5EF;
+
+    padding:140px 8%;
+
+}
+
+.mission-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.mission-heading{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 80px;
+
+}
+
+.mission-heading h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3.8rem;
+
+    color:#352820;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:36px;
+
+}
+
+.mission-card{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+    transition:var(--transition);
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 65px rgba(0,0,0,.12);
+
+}
+
+.mission-icon{
+
+    font-size:3rem;
+
+    margin-bottom:26px;
+
+}
+
+.mission-card h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2rem;
+
+    color:#352820;
+
+    margin-bottom:18px;
+
+}
+
+.mission-card p{
+
+    color:#655B55;
+
+    line-height:1.8;
+
+}
+
+
+/* FUTURE */
+
+.about-future{
+
+    background:#2C211B;
+
+    color:white;
+
+    padding:140px 8%;
+
+    text-align:center;
+
+}
+
+.future-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.about-future h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3.8rem;
+
+    color:white;
+
+    margin-bottom:34px;
+
+}
+
+.about-future p{
+
+    color:#DDD4C5;
+
+    line-height:2;
+
+    font-size:1.15rem;
+
+    margin-bottom:28px;
+
+}
+
+.future-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-top:50px;
+
+}
+
+.about-button{
+
+    background:var(--rvw-gold);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 36px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+.about-button:hover{
+
+    background:#B88735;
+
+}
+
+.about-button-outline{
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 36px;
+
+    border-radius:999px;
+
+}
+
+.about-button-outline:hover{
+
+    background:white;
+
+    color:#2C211B;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.story-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.mission-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-hero h1{
+
+font-size:3.6rem;
+
+}
+
+.mission-heading h2,
+.about-future h2{
+
+font-size:2.8rem;
+
+}
+
+.story-copy{
+
+padding:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero{
+
+min-height:60vh;
+
+}
+
+.about-content{
+
+padding:90px 0;
+
+}
+
+.about-hero h1{
+
+font-size:2.8rem;
+
+}
+
+.story-copy h2{
+
+font-size:2.4rem;
+
+}
+
+}
