@@ -2297,3 +2297,285 @@ font-size:1.7rem;
 /* ==========================================================
    FOOTER
 ========================================================== */
+.rvw-footer{
+
+    position:relative;
+    overflow:hidden;
+
+    background:#0f2238;
+    color:#ffffff;
+
+    padding-top:110px;
+}
+
+/* ---------------------------------------------------------- */
+/* Soft Gold Glow */
+
+.rvw-footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-250px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+    height:500px;
+
+    background:radial-gradient(
+        circle,
+        rgba(214,179,106,.12) 0%,
+        rgba(214,179,106,.05) 35%,
+        transparent 75%
+    );
+
+    pointer-events:none;
+}
+
+/* ---------------------------------------------------------- */
+/* Subtle Texture */
+
+.rvw-footer::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+    radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
+
+    background-size:26px 26px;
+
+    opacity:.25;
+
+    pointer-events:none;
+}
+
+/* ========================================================== */
+
+.footer-container{
+
+    position:relative;
+    z-index:2;
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:70px;
+
+    padding-bottom:80px;
+}
+
+/* ========================================================== */
+
+.footer-column h3{
+
+    color:#d6b36a;
+
+    margin-bottom:22px;
+
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+/* ========================================================== */
+
+.footer-logo{
+
+    width:260px;
+    max-width:100%;
+
+    margin-bottom:28px;
+}
+
+/* ========================================================== */
+
+.footer-mission{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.88);
+
+    margin-bottom:28px;
+
+    max-width:520px;
+}
+
+/* ========================================================== */
+
+.footer-tagline{
+
+    display:inline-flex;
+    align-items:center;
+
+    gap:10px;
+
+    color:#d6b36a;
+
+    font-weight:600;
+
+    letter-spacing:.03em;
+}
+
+/* ========================================================== */
+
+.footer-column ul{
+
+    list-style:none;
+
+    margin:0;
+    padding:0;
+}
+
+/* ---------------------------------------------------------- */
+
+.footer-column li{
+
+    margin-bottom:18px;
+}
+
+/* ---------------------------------------------------------- */
+
+.footer-column a{
+
+    color:rgba(255,255,255,.88);
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.footer-column a:hover{
+
+    color:#d6b36a;
+
+    padding-left:6px;
+}
+
+/* ========================================================== */
+
+.footer-column p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+}
+
+/* ========================================================== */
+
+.footer-social{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+}
+
+.footer-social a{
+
+    font-weight:600;
+}
+
+/* ========================================================== */
+
+.footer-bottom{
+
+    position:relative;
+    z-index:2;
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:20px;
+
+    border-top:1px solid rgba(214,179,106,.28);
+
+    padding:30px 0 40px;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:.92rem;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:55px;
+
+        text-align:center;
+    }
+
+    .footer-brand{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer-tagline{
+
+        justify-content:center;
+    }
+
+    .footer-social{
+
+        align-items:center;
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+}
+
+/* ---------------------------------------------------------- */
+
+@media (max-width:768px){
+
+    .rvw-footer{
+
+        padding-top:80px;
+    }
+
+    .footer-logo{
+
+        width:210px;
+    }
+
+    .footer-mission{
+
+        font-size:1rem;
+    }
+
+    .footer-bottom{
+
+        font-size:.85rem;
+    }
+
+}
