@@ -1,28 +1,16 @@
-.hero{
-
-    position:relative;
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    overflow:hidden;
-
+.hero {
     background-image:
-    linear-gradient(
-    rgba(34,28,24,.70),
-    rgba(34,28,24,.40)),
-    url("../images/hero-ripvanwhisker.jpg");
+        linear-gradient(
+            90deg,
+            rgba(28,22,18,.78) 0%,
+            rgba(28,22,18,.55) 28%,
+            rgba(28,22,18,.20) 55%,
+            rgba(28,22,18,.05) 100%
+        ),
+        url("https://www.ripvanwhisker.com/wp-content/uploads/2026/07/RVWHero.png");
 
-    background-size:cover;
-
-    background-position:center;
-
-    color:white;
-
-    padding:0 8%;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content{
