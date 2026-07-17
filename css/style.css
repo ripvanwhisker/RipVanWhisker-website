@@ -153,7 +153,7 @@
 
     padding:18px 40px;
 
-    background:#C79A4A;
+    background:var(--rvw-gold);
 
     color:#ffffff;
 
@@ -470,7 +470,7 @@ text-align:center;
 
     text-transform:uppercase;
 
-    color:#C79A4A;
+    color:var(--rvw-gold);
 
     font-size:.9rem;
 
@@ -520,7 +520,7 @@ text-align:center;
 
     box-shadow:0 18px 50px rgba(0,0,0,.06);
 
-    transition:.35s ease;
+    transition: var(--transition);
 
 }
 
@@ -564,13 +564,13 @@ text-align:center;
 
 .card-link{
 
-    color:#C79A4A;
+    color:var(--rvw-gold);
 
     text-decoration:none;
 
     font-weight:600;
 
-    transition:.3s;
+    transition: var(--transition);
 
 }
 
@@ -674,7 +674,7 @@ padding:40px;
 
 .story-content{
 
-    background:#FFFFFF;
+    background:var(--rvw-white);
 
     padding:65px;
 
@@ -691,7 +691,7 @@ padding:40px;
 
     margin-bottom:20px;
 
-    color:#C79A4A;
+    color:var(--rvw-gold);
 
     text-transform:uppercase;
 
@@ -745,7 +745,7 @@ padding:40px;
 
     margin-top:20px;
 
-    color:#C79A4A;
+    color:var(--rvw-gold);
 
     text-decoration:none;
 
@@ -753,13 +753,13 @@ padding:40px;
 
     letter-spacing:.5px;
 
-    transition:all .35s ease;
+    transition: var(--transition);
 
 }
 
 .story-button .arrow{
 
-    transition:transform .35s ease;
+    transition: var(--transition);
 
 }
 
@@ -783,7 +783,7 @@ padding:40px;
 
 .philosophy{
 
-    background:#FFFFFF;
+    background:var(--rvw-white);
 
     padding:140px 8%;
 
@@ -1095,7 +1095,7 @@ font-size:2rem;
 
     line-height:1.05;
 
-    color:#FFF;
+    color:var(--rvw-white);
 
     margin-bottom:30px;
 
@@ -1165,7 +1165,7 @@ font-size:2rem;
 
         0 25px 60px rgba(0,0,0,.18);
 
-    transition:all .4s ease;
+    transition: var(--transition);
 
 }
 
@@ -1209,7 +1209,7 @@ font-size:2rem;
 
     background:#D4A64F;
 
-    color:#FFF;
+    color:var(--rvw-white);
 
     padding:10px 24px;
 
@@ -1331,9 +1331,9 @@ font-size:2rem;
 
     text-align:center;
 
-    background:#C79A4A;
+    background:var(--rvw-gold);
 
-    color:#FFF;
+    color:var(--rvw-white);
 
     text-decoration:none;
 
@@ -1343,7 +1343,7 @@ font-size:2rem;
 
     font-weight:700;
 
-    transition:all .35s ease;
+    transition: var(--transition);
 
 }
 
@@ -1387,7 +1387,7 @@ font-size:2rem;
 
     font-size:2.9rem;
 
-    color:#FFF;
+    color:var(--rvw-white);
 
     line-height:1.3;
 
@@ -1564,7 +1564,7 @@ font-size:2rem;
 
     display:block;
 
-    color:#C79A4A;
+    color:var(--rvw-gold);
 
     font-weight:700;
 
@@ -1644,7 +1644,7 @@ font-size:2rem;
 
         0 35px 80px rgba(0,0,0,.16);
 
-    transition:all .45s ease;
+    transition: var(--transition);
 
 }
 
@@ -1742,7 +1742,7 @@ font-size:2rem;
 
     border-radius:50%;
 
-    background:#FFF;
+    background:var(--rvw-white);
 
     display:flex;
 
@@ -1802,9 +1802,9 @@ font-size:2rem;
 
     padding:18px 34px;
 
-    background:#C79A4A;
+    background:var(--rvw-gold);
 
-    color:#FFF;
+    color:var(--rvw-white);
 
     text-decoration:none;
 
@@ -1812,7 +1812,7 @@ font-size:2rem;
 
     font-weight:700;
 
-    transition:.35s;
+    transition: var(--transition);
 
 }
 
@@ -1830,7 +1830,7 @@ font-size:2rem;
 
     padding:18px 34px;
 
-    border:2px solid #C79A4A;
+    border:2px solid var(--rvw-gold);
 
     color:#30241D;
 
@@ -1840,7 +1840,7 @@ font-size:2rem;
 
     font-weight:700;
 
-    transition:.35s;
+    transition: var(--transition);
 
 }
 
@@ -1850,7 +1850,7 @@ font-size:2rem;
 
     border-color:#30241D;
 
-    color:#FFF;
+    color:var(--rvw-white);
 
 }
 
@@ -2057,7 +2057,7 @@ font-size:1.7rem;
 
     max-width:600px;
 
-    color:#ffffff;
+    color:var(--rvw-white);
 
     padding:120px 0;
 }
@@ -2165,7 +2165,7 @@ font-size:1.7rem;
     font-size:1.25rem;
     font-weight:700;
 
-    color:#ffffff;
+    color:var(--rvw-white);
 }
 
 /* ---------------------------------------------------------- */
@@ -2208,7 +2208,7 @@ font-size:1.7rem;
 
     font-weight:700;
 
-    transition:.35s;
+    transition: var(--transition);
 }
 
 .coming-primary:hover{
@@ -2303,7 +2303,7 @@ font-size:1.7rem;
     overflow:hidden;
 
     background:#0f2238;
-    color:#ffffff;
+    color:var(--rvw-white);
 
     padding-top:110px;
 }
@@ -2451,7 +2451,7 @@ font-size:1.7rem;
 
     text-decoration:none;
 
-    transition:.3s;
+    transition: var(--transition);
 }
 
 .footer-column a:hover{
