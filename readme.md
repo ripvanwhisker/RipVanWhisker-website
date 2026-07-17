@@ -1,40 +1,22 @@
-# 🐾 RipVanWhisker Cat Café
+# RipVanWhisker Cat Café Website
 
-Welcome to the official website project for **RipVanWhisker Cat Café**, Atlantic City's first cat café.
+Official website for RipVanWhisker Cat Café.
 
 ## Mission
 
-Create a warm, welcoming destination where handcrafted coffee, rescue cats, and community come together to create second chances.
+Creating Atlantic City's first cat café where exceptional coffee, community, and rescue cats come together.
 
-## Project Goals
+## Project Structure
 
-- Build a premium website experience
-- Grow Founding Human memberships
-- Sell merchandise
-- Tell the RipVanWhisker story
-- Support rescue cats
-- Prepare for Grand Opening
-
-## Technology
-
-- WordPress
-- Astra Theme
-- WooCommerce
-- Custom HTML
-- Custom CSS
-
-## Repository Structure
-
+/components
+/pages
+/sections
 /css
-/html
 /images
 /docs
-/assets
 
-## Current Phase
+## Current Status
 
-🚧 Design System 2.0
+Version 1.0 Feature Complete
 
-Homepage Rebuild
-
-Launch Preparation
+Currently integrating into WordPress.
