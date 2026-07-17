@@ -2006,7 +2006,293 @@ font-size:1.7rem;
 /* ==========================================================
    COMING SOON
 ========================================================== */
+.coming-soon{
+    position:relative;
+    overflow:hidden;
 
+    background-image:url('https://www.ripvanwhisker.com/wp-content/uploads/2026/07/comingsoon.png');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
+    min-height:900px;
+
+    display:flex;
+    align-items:center;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(25,20,16,.84) 0%,
+        rgba(25,20,16,.76) 28%,
+        rgba(25,20,16,.48) 55%,
+        rgba(25,20,16,.15) 75%,
+        rgba(25,20,16,0) 100%
+    );
+
+    z-index:1;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    position:relative;
+    z-index:2;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-content{
+
+    max-width:600px;
+
+    color:#ffffff;
+
+    padding:120px 0;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-eyebrow{
+
+    display:inline-block;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+
+    font-size:.82rem;
+    font-weight:700;
+
+    color:#d6b36a;
+
+    margin-bottom:18px;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-content h2{
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+    line-height:1.05;
+    font-weight:800;
+
+    margin:0 0 30px;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-intro{
+
+    font-size:1.18rem;
+    line-height:1.9;
+
+    color:rgba(255,255,255,.92);
+
+    margin-bottom:60px;
+
+    max-width:560px;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-features{
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+
+    margin-bottom:55px;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-feature{
+
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+
+    padding:22px 24px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    border-radius:20px;
+}
+
+/* ---------------------------------------------------------- */
+
+.feature-icon{
+
+    width:62px;
+    height:62px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.6rem;
+
+    background:rgba(214,179,106,.18);
+
+    border:1px solid rgba(214,179,106,.35);
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-feature h3{
+
+    margin:0 0 8px;
+
+    font-size:1.25rem;
+    font-weight:700;
+
+    color:#ffffff;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-feature p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.86);
+
+    line-height:1.75;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-buttons{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* ---------------------------------------------------------- */
+
+.coming-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:18px 42px;
+
+    background:#d6b36a;
+
+    color:#1d1d1d;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.35s;
+}
+
+.coming-primary:hover{
+
+    transform:translateY(-3px);
+
+    background:#e7c47a;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.30);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .coming-soon{
+
+        min-height:auto;
+
+        background-position:68% center;
+    }
+
+    .coming-content{
+
+        max-width:100%;
+
+        padding:90px 0;
+    }
+
+    .coming-content h2{
+
+        font-size:3rem;
+    }
+
+}
+
+/* ---------------------------------------------------------- */
+
+@media (max-width:768px){
+
+    .coming-soon{
+
+        background-position:72% center;
+    }
+
+    .coming-content{
+
+        padding:70px 0;
+    }
+
+    .coming-content h2{
+
+        font-size:2.4rem;
+    }
+
+    .coming-intro{
+
+        font-size:1.05rem;
+        line-height:1.8;
+    }
+
+    .coming-feature{
+
+        gap:18px;
+
+        padding:18px;
+    }
+
+    .feature-icon{
+
+        width:52px;
+        height:52px;
+
+        font-size:1.3rem;
+    }
+
+    .coming-primary{
+
+        width:100%;
+    }
+
+}
 
 /* ==========================================================
    FOOTER
