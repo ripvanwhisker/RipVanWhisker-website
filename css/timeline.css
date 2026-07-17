@@ -1,0 +1,126 @@
+/* ==========================================================
+   TIMELINE COMPONENT
+   RipVanWhisker Cat Cafe
+========================================================== */
+
+.rvw-timeline-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.rvw-timeline{
+    position:relative;
+    max-width:900px;
+    margin:4rem auto;
+    padding-left:2rem;
+}
+
+.rvw-timeline::before{
+    content:"";
+    position:absolute;
+    left:34px;
+    top:0;
+    bottom:0;
+    width:4px;
+    background:linear-gradient(var(--rvw-gold),var(--rvw-ocean));
+    border-radius:10px;
+}
+
+.rvw-timeline-item{
+    position:relative;
+    display:flex;
+    gap:2rem;
+    margin-bottom:2.5rem;
+    padding:2rem;
+    transition:.3s ease;
+}
+
+.rvw-timeline-item:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--rvw-shadow-lg);
+}
+
+.rvw-timeline-marker{
+    width:64px;
+    height:64px;
+    min-width:64px;
+    border-radius:50%;
+    background:#fff;
+    border:4px solid var(--rvw-gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.7rem;
+    z-index:2;
+    box-shadow:var(--rvw-shadow-md);
+}
+
+.rvw-timeline-item h3{
+    margin-bottom:.5rem;
+}
+
+.rvw-timeline-item p{
+    margin:0;
+    color:var(--rvw-charcoal);
+    line-height:1.7;
+}
+
+.rvw-timeline-item:nth-child(even){
+    margin-left:3rem;
+}
+
+.rvw-timeline-item:nth-child(odd){
+    margin-right:3rem;
+}
+
+@keyframes rvwFadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.rvw-timeline-item{
+    animation:rvwFadeUp .7s ease both;
+}
+
+.rvw-timeline-item:nth-child(2){animation-delay:.08s;}
+.rvw-timeline-item:nth-child(3){animation-delay:.16s;}
+.rvw-timeline-item:nth-child(4){animation-delay:.24s;}
+.rvw-timeline-item:nth-child(5){animation-delay:.32s;}
+.rvw-timeline-item:nth-child(6){animation-delay:.40s;}
+.rvw-timeline-item:nth-child(7){animation-delay:.48s;}
+
+@media (max-width:768px){
+
+.rvw-timeline{
+    padding-left:0;
+}
+
+.rvw-timeline::before{
+    left:30px;
+}
+
+.rvw-timeline-item,
+.rvw-timeline-item:nth-child(even),
+.rvw-timeline-item:nth-child(odd){
+    margin:0 0 2rem;
+}
+
+.rvw-timeline-marker{
+    width:56px;
+    height:56px;
+    min-width:56px;
+    font-size:1.4rem;
+}
+
+.rvw-timeline-item{
+    gap:1.25rem;
+    padding:1.5rem;
+}
+
+}
