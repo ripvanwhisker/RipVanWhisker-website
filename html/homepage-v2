@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RipVanWhisker Cat Café | Atlantic City's First Cat Café</title>
+</head>
+<body>
+
+<!-- Header Component -->
+<!-- Include: header.html -->
+
+<main>
+
+<!-- HERO -->
+<section class="rvw-hero">
+  <div class="rvw-container">
+    <span class="rvw-home-eyebrow">Coming Soon to Atlantic City</span>
+    <h1>Atlantic City's First Cat Café</h1>
+    <p>
+      A warm, welcoming destination where handcrafted coffee, rescue cats,
+      and community come together to create second chances.
+    </p>
+
+    <div class="rvw-founders-actions">
+      <a class="rvw-btn rvw-btn-primary" href="/friends-founders">Become a Founding Human</a>
+      <a class="rvw-btn rvw-btn-secondary" href="/shop">Shop Merchandise</a>
+    </div>
+  </div>
+</section>
+
+<!-- YOUR VISIT -->
+<section class="rvw-section">
+  <div class="rvw-container">
+    <div class="rvw-section-title">
+      <h2>Your Visit</h2>
+      <p>Enjoy exceptional coffee, meet adoptable rescue cats, and experience a place built around compassion and connection.</p>
+    </div>
+
+    <div class="rvw-visit-grid">
+      <article class="rvw-card"><h3>☕ Sip</h3><p>Premium coffee, espresso, pastries, and a relaxing café atmosphere.</p></article>
+      <article class="rvw-card"><h3>🐾 Connect</h3><p>Spend time with friendly rescue cats in a thoughtfully designed lounge.</p></article>
+      <article class="rvw-card"><h3>❤️ Change a Life</h3><p>Every purchase supports rescue, enrichment, and future adoptions.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="rvw-section rvw-section-light">
+<div class="rvw-container rvw-story">
+<div>
+<h2>More Than a Cat Café</h2>
+<p>RipVanWhisker is being created as a gathering place where coffee lovers, cat lovers, families, and visitors can relax together while supporting rescue animals.</p>
+<a class="rvw-btn rvw-btn-primary" href="/about">Read Our Story</a>
+</div>
+<div>
+<img src="../images/about/our-story.jpg" alt="RipVanWhisker story">
+</div>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section class="rvw-section">
+<div class="rvw-container">
+<div class="rvw-section-title">
+<h2>Our Journey</h2>
+<p>Every milestone brings us closer to opening day.</p>
+</div>
+
+<div class="rvw-timeline">
+<div class="rvw-card"><strong>✓ Vision</strong><p>The dream begins.</p></div>
+<div class="rvw-card"><strong>✓ Community</strong><p>Founding Humans join the mission.</p></div>
+<div class="rvw-card"><strong>⏳ Construction</strong><p>Preparing our future home.</p></div>
+<div class="rvw-card"><strong>🏁 Grand Opening</strong><p>Welcoming our first guests and first adoptions.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="rvw-section rvw-section-light">
+<div class="rvw-container">
+<div class="rvw-section-title">
+<h2>Become a Founding Human</h2>
+<p>Help build Atlantic City's first cat café and leave your paw print on our story.</p>
+</div>
+<div style="text-align:center;">
+<a class="rvw-btn rvw-btn-primary" href="/friends-founders">Join Today</a>
+</div>
+</div>
+</section>
+
+<!-- MERCH -->
+<section class="rvw-section">
+<div class="rvw-container">
+<div class="rvw-section-title">
+<h2>Featured Merchandise</h2>
+<p>Wear the mission and help fund opening day.</p>
+</div>
+
+<div class="rvw-visit-grid">
+<article class="rvw-card"><h3>👕 Founding Human Apparel</h3></article>
+<article class="rvw-card"><h3>☕ Signature Mugs</h3></article>
+<article class="rvw-card"><h3>🐾 Stickers & Gifts</h3></article>
+</div>
+
+<div style="text-align:center;margin-top:2rem;">
+<a class="rvw-btn rvw-btn-primary" href="/merchandise">Visit the Store</a>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="rvw-section rvw-section-light">
+<div class="rvw-container">
+<div class="rvw-card" style="text-align:center;max-width:900px;margin:auto;">
+<h2>Help Us Open Our Doors</h2>
+<p>Every purchase, every share, and every Founding Human brings RipVanWhisker one step closer to welcoming its first guests and helping rescue cats find forever homes.</p>
+<div class="rvw-founders-actions">
+<a class="rvw-btn rvw-btn-primary" href="/friends-founders">Become a Founding Human</a>
+<a class="rvw-btn rvw-btn-secondary" href="/contact">Contact Us</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer Component -->
+<!-- Include: footer.html -->
+
+</body>
+</html>
