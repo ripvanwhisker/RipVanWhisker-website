@@ -37,15 +37,11 @@
 .hero{
 
     position:relative;
-
     display:flex;
-
     align-items:center;
 
     min-height:100vh;
-
     width:100%;
-
     overflow:hidden;
 
     padding:0 8%;
@@ -62,22 +58,19 @@
         url("https://www.ripvanwhisker.com/wp-content/uploads/2026/07/RVWHero.png");
 
     background-size:cover;
-
     background-position:center center;
-
     background-repeat:no-repeat;
 
-    color:#ffffff;
+    color:var(--rvw-white);
 }
 
 /* ==========================================================
    Content
-   ========================================================== */
+========================================================== */
 
 .hero-content{
 
     position:relative;
-
     z-index:5;
 
     max-width:610px;
@@ -87,14 +80,12 @@
 
 /* ==========================================================
    Eyebrow
-   ========================================================== */
+========================================================== */
 
 .hero-eyebrow{
 
     font-size:.9rem;
-
     letter-spacing:4px;
-
     text-transform:uppercase;
 
     color:#E3D7BF;
@@ -104,16 +95,14 @@
 
 /* ==========================================================
    Headline
-   ========================================================== */
+========================================================== */
 
 .hero h1{
 
     font-family:"Cormorant Garamond",serif;
 
     font-size:5.2rem;
-
     line-height:1;
-
     font-weight:600;
 
     margin:0 0 32px;
@@ -121,12 +110,11 @@
 
 /* ==========================================================
    Description
-   ========================================================== */
+========================================================== */
 
 .hero-description{
 
     font-size:1.22rem;
-
     line-height:1.85;
 
     color:#F5F2EC;
@@ -136,14 +124,12 @@
 
 /* ==========================================================
    Buttons
-   ========================================================== */
+========================================================== */
 
 .hero-buttons{
 
     display:flex;
-
     flex-wrap:wrap;
-
     gap:18px;
 }
 
@@ -154,18 +140,16 @@
     padding:18px 40px;
 
     background:var(--rvw-gold);
+    color:var(--rvw-white);
 
-    color:#ffffff;
-
-    border-radius:50px;
+    border-radius:var(--radius-pill);
 
     text-decoration:none;
 
     font-weight:600;
-
     letter-spacing:.5px;
 
-    transition:all .35s ease;
+    transition:var(--transition);
 
     box-shadow:0 12px 28px rgba(0,0,0,.25);
 }
@@ -185,25 +169,25 @@
 
     border:2px solid rgba(255,255,255,.95);
 
-    color:#ffffff;
+    color:var(--rvw-white);
 
-    border-radius:50px;
+    border-radius:var(--radius-pill);
 
     text-decoration:none;
 
-    transition:all .35s ease;
+    transition:var(--transition);
 }
 
 .btn-secondary:hover{
 
-    background:#ffffff;
+    background:var(--rvw-white);
 
     color:#3E2E28;
 }
 
 /* ==========================================================
    Opening Note
-   ========================================================== */
+========================================================== */
 
 .hero-opening{
 
@@ -218,14 +202,13 @@
 
 /* ==========================================================
    Philosophy
-   ========================================================== */
+========================================================== */
 
 .hero-philosophy{
 
     position:absolute;
 
     bottom:55px;
-
     right:60px;
 
     z-index:5;
@@ -233,7 +216,6 @@
     font-family:"Cormorant Garamond",serif;
 
     font-size:1.15rem;
-
     font-style:italic;
 
     color:rgba(255,255,255,.82);
@@ -243,192 +225,40 @@
 
 /* ==========================================================
    Scroll Indicator
-   ========================================================== */
+========================================================== */
 
 .hero-scroll{
 
     position:absolute;
 
     bottom:25px;
-
     left:50%;
 
     transform:translateX(-50%);
 
     z-index:5;
 
-    color:#ffffff;
+    color:var(--rvw-white);
 
     text-align:center;
 
     font-size:.9rem;
-
     letter-spacing:2px;
 }
 
 .scroll-arrow{
 
     width:18px;
-
     height:18px;
 
     margin:14px auto 0;
 
-    border-left:2px solid #ffffff;
-
-    border-bottom:2px solid #ffffff;
+    border-left:2px solid var(--rvw-white);
+    border-bottom:2px solid var(--rvw-white);
 
     transform:rotate(-45deg);
 
     animation:bounce 2s infinite;
-}
-
-/* ==========================================================
-   Animations
-   ========================================================== */
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-@keyframes bounce{
-
-    0%,100%{
-
-        transform:rotate(-45deg) translateY(0);
-
-    }
-
-    50%{
-
-        transform:rotate(-45deg) translateY(8px);
-
-    }
-
-}
-
-/* ==========================================================
-   Responsive
-   ========================================================== */
-
-@media (max-width:1100px){
-
-.hero{
-
-padding:120px 8% 80px;
-
-align-items:center;
-
-}
-
-.hero h1{
-
-font-size:4.3rem;
-
-}
-
-}
-
-@media (max-width:900px){
-
-.hero{
-
-padding:120px 8% 80px;
-
-text-align:center;
-
-background-position:68% center;
-
-}
-
-.hero-content{
-
-max-width:100%;
-
-margin:auto;
-
-}
-
-.hero h1{
-
-font-size:3.3rem;
-
-}
-
-.hero-description{
-
-font-size:1.08rem;
-
-}
-
-.hero-buttons{
-
-justify-content:center;
-
-}
-
-.hero-opening{
-
-text-align:center;
-
-}
-
-.hero-philosophy{
-
-display:none;
-
-}
-
-.hero-scroll{
-
-display:none;
-
-}
-
-}
-
-@media (max-width:600px){
-
-.hero h1{
-
-font-size:2.7rem;
-
-}
-
-.hero-description{
-
-font-size:1rem;
-
-line-height:1.7;
-
-}
-
-.btn-primary,
-
-.btn-secondary{
-
-width:100%;
-
-text-align:center;
-
-}
-
 }
 
 /* ==========================================================
