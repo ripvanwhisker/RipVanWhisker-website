@@ -87,13 +87,12 @@
 /* ==========================================================
    Content
 ========================================================== */
-
 .hero-content{
-
     position:relative;
     z-index:5;
+    max-width:670px;
 
-    max-width:610px;
+    margin-left:-20px;
 
     animation:fadeUp 1.2s ease;
 }
@@ -105,7 +104,7 @@
 .hero-eyebrow{
 
     font-size:.9rem;
-    letter-spacing:4px;
+    letter-spacing:5px;
     text-transform:uppercase;
 
     color:#E3D7BF;
@@ -118,6 +117,8 @@
 ========================================================== */
 
 .hero h1{
+    color: #FDFBF8 !important;
+    text-shadow: 0 4px 18px rgba(0,0,0,.35);
 
     font-family:"Cormorant Garamond",serif;
 
@@ -136,7 +137,7 @@
 
     font-size:1.22rem;
     line-height:1.85;
-
+ max-width:640px;
     color:#F5F2EC;
 
     margin-bottom:40px;
@@ -2882,6 +2883,246 @@ font-size:2.8rem;
 
 font-size:2.4rem;
 
+}
+
+}/* Remove gap below header */
+
+.site-content,
+.site-main,
+.entry-content{
+
+    margin-top:0 !important;
+    padding-top:0 !important;
+
+}
+
+main{
+
+    margin-top:0 !important;
+    padding-top:0 !important;
+
+}
+/* ==========================================================
+   RIPVANWHISKER
+   FRIENDS & FOUNDERS v2.0
+==========================================================*/
+
+/* ---------- HERO ---------- */
+
+.ff-hero{
+    position:relative;
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(25,32,45,.68),rgba(25,32,45,.72)),
+        url("https://www.ripvanwhisker.com/wp-content/uploads/2026/07/FF-Hero.png")
+        center center/cover no-repeat;
+}
+
+.ff-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,
+        rgba(25,32,45,.55) 0%,
+        rgba(25,32,45,.30) 45%,
+        rgba(25,32,45,.10) 100%);
+}
+
+.ff-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.ff-hero-content{
+    max-width:700px;
+    padding:180px 0 140px;
+}
+
+.ff-hero .section-label{
+    display:inline-block;
+    margin-bottom:24px;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:.85rem;
+    font-weight:700;
+    color:#DDBB6A;
+}
+
+.ff-hero h1{
+    color:#ffffff;
+    font-size:clamp(3rem,6vw,5.25rem);
+    line-height:1.05;
+    margin:0 0 30px;
+    font-family:var(--e-global-typography-primary-font-family,Georgia,serif);
+}
+
+.ff-hero p{
+    color:rgba(255,255,255,.92);
+    font-size:1.2rem;
+    line-height:1.9;
+    margin-bottom:40px;
+    max-width:620px;
+}
+
+.hero-actions{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:999px;
+    font-weight:700;
+    transition:.3s ease;
+}
+
+.btn-primary{
+    background:#DDBB6A;
+    color:#1F2A3A;
+}
+
+.btn-primary:hover{
+    background:#e7c57a;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid rgba(255,255,255,.55);
+    color:#fff;
+    background:transparent;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#1F2A3A;
+}
+
+/* ---------- SUPPORT ---------- */
+
+.support-section{
+    padding:130px 0;
+    background:#FDFBF8;
+}
+
+.story-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.story-image img{
+    width:100%;
+    display:block;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    border-radius:26px;
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+}
+
+.story-content{
+    background:#fff;
+    border-radius:28px;
+    padding:65px;
+    box-shadow:0 22px 55px rgba(0,0,0,.08);
+}
+
+.story-content .section-label{
+    display:inline-block;
+    margin-bottom:20px;
+    color:#DDBB6A;
+    letter-spacing:5px;
+    font-size:.82rem;
+    font-weight:700;
+}
+
+.story-content h2{
+    font-size:clamp(2.3rem,3vw,3.5rem);
+    color:#1F2A3A;
+    line-height:1.15;
+    margin-bottom:28px;
+    font-family:var(--e-global-typography-primary-font-family,Georgia,serif);
+}
+
+.story-content p{
+    color:#5B6472;
+    line-height:2;
+    margin-bottom:24px;
+    font-size:1.06rem;
+}
+
+/* ---------- GLOBAL ---------- */
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:1024px){
+
+.story-grid{
+    grid-template-columns:1fr;
+}
+
+.story-content{
+    padding:50px;
+}
+
+.ff-hero-content{
+    padding:150px 0 110px;
+}
+
+}
+
+@media (max-width:768px){
+
+.ff-hero{
+    min-height:80vh;
+    background-position:center center;
+}
+
+.ff-hero-content{
+    padding:120px 0 80px;
+}
+
+.ff-hero h1{
+    font-size:3rem;
+}
+
+.ff-hero p{
+    font-size:1.05rem;
+}
+
+.hero-actions{
+    flex-direction:column;
+}
+
+.hero-actions .btn{
+    width:100%;
+}
+
+.support-section{
+    padding:90px 0;
+}
+
+.story-content{
+    padding:36px;
+}
+
+.story-content h2{
+    font-size:2.2rem;
 }
 
 }
